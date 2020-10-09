@@ -1,4 +1,4 @@
-package tp01;
+package td01;
 
 /**
  * Que fait la classe ?
