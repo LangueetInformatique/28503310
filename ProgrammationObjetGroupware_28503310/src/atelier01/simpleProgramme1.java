@@ -1,4 +1,4 @@
-package td01;
+package atelier01;
 
 /**
  * Que fait la classe ?

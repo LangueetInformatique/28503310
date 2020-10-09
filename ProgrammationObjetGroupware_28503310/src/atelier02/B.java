@@ -1,26 +1,27 @@
-package td02;
+package atelier02;
 
 /**
  * Classe non-exécutable de la deuxième partie de l'atelier
  * @author Ana
+ *
  */
 
-public class A {
-
+public class B {
+	
 	/*
+	 * 
 	 *@param n int
 	 *@return true si n est divisible par 13
 	 *false sinon 
 	 */
+
+	public static int divise (int n){
 		
-	public static boolean treize (int n){
-		if ((n % 13) == 0)
-
-			return true;
-
+		if (A.treize(n) == true)
+			return n / 2;
 		else
-			return false;
-			
+			return n + 2;
+
 	}
 
 }

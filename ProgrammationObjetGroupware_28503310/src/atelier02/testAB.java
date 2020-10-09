@@ -1,4 +1,4 @@
-package td02;
+package atelier02;
 
 /*
  * Classe exécutable de la deuxième partie de l'atelier
