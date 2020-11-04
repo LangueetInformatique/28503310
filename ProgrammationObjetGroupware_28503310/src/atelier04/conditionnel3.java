@@ -15,34 +15,32 @@ public class conditionnel3 {
 	}
 
 	public static void mediane(int p1, int p2, int p3, int p4, int p5) {
+		
 		int p6 = 0;
-		int sumatoria = 0;
-		int arreglo[] = {p1, p2, p3, p4, p5};
+		int arreglo[] = {p1, p2, p3, p4, p5}; // on va organiser les chiffres
 		
-		for (int x = 0; x < arreglo.length; x++) {
-            sumatoria += arreglo[x];
-        }
-        double media = sumatoria / arreglo.length;
-		
-        Arrays.sort(arreglo);
+		Arrays.sort(arreglo);
 
         int mediane;
-        int mitad = arreglo.length / 2;
-        // Si la longitud es par, se deben promediar los del centro
-        if (arreglo.length % 2 == 0) {
-            mediane = (arreglo[mitad - 1] + arreglo[mitad]) / 2;
+        int moitie = arreglo.length / 2; // pour trouver la moitié de la serie
+        
+        if (arreglo.length % 2 == 0) { // si le tableau est pair, il faut faire la moyenne des deux chiffres au centre
+            mediane = (arreglo[moitie - 1] + arreglo[moitie]) / 2;
         } else {
-            mediane = arreglo[mitad];
+            mediane = arreglo[moitie];
         }
         p6 = mediane;
 
-        // Imprimir valores
-        System.out.println("El arreglo es: ");
+        // On peut imprimer la serie ordonée
+        /**System.out.println("El arreglo es: ");
         for (int x = 0; x < arreglo.length; x++) {
+        	
             System.out.printf("%d ", arreglo[x]);
-        }
-        System.out.printf("\nLa media es %.2f y la mediana es %d", media, p6);
-
-    }
+        
+        }**/
+        
+        System.out.printf("\nLa mediane est %d", p6);
+        
+	}
 
 }
