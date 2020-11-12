@@ -12,7 +12,7 @@ public class Promotion {
 		
 		Etudiant etudiant1= new Etudiant(); //instanciar o ejemplarizar una clase
 		
-		etudiant1.info_nom("ARMENTA", "Ana", "01/05/81", 28503310, 13, 7);
+		etudiant1.info_nom("ORTIZ", "Manuel", "01/12/96", 12345678, 13, 7);
 		
 		System.out.println(etudiant1.coordonees());
 		
