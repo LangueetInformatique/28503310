@@ -1,4 +1,4 @@
-package atelier05;
+package devoir02;
 
 public class Promotion {
 	String nom, prenom;
