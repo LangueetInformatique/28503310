@@ -1,4 +1,4 @@
-package devoirs;
+package devoir01;
 
 import java.util.Arrays;
 
@@ -6,7 +6,7 @@ import java.util.Arrays;
  * conditionnels permettant d’obtenir la médiane des variables 
  * p1, p2, p3, p4, p5 dans la variable p6.*/
 
-public class devoir1 {
+public class moyenne {
 
 	public static void main(String[] args) {
 		int p1 = 10, p2 = -1, p3 = 9, p4 = 4, p5 = 8;
