@@ -14,7 +14,7 @@ public class Etudiant {
 	 * Constructeur vide. No hay parametros
 	 */
 
-	public void info_nom(String setnom, String setprenom, String setdateNaissance, int setnumero, int setnoteLicence, int setnoteMaster) {
+	public void info_etud(String setnom, String setprenom, String setdateNaissance, int setnumero, int setnoteLicence, int setnoteMaster) {
 		
 		nom = setnom;	
 		prenom = setprenom;
