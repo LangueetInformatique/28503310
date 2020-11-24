@@ -43,3 +43,4 @@ public class Chat extends Felin implements Domesticable {
 	}
 
 }
+

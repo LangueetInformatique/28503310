@@ -9,6 +9,8 @@ public class testReptile {
 		f.presente();
 		f.crie();
 		f.la_peau();
+		f.la_reproduction();
+		f.leur_localisation();
 	}
 
 }

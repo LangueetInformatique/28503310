@@ -9,8 +9,8 @@ public abstract class Animal {
 	 * creation d'une nouvelle instance de la classe Animal
 	 * @param type   nom de l'espece
 	 * @param pattes nombre de pattes
-	 * @param cri
-	 * @param la_peau
+	 * @param cri cri d'animal
+	 * @param la_peau d'animal
 	 */
 	public Animal(String type, int pattes) {
 		espece = type;
@@ -26,8 +26,17 @@ public abstract class Animal {
 	public abstract void crie();
 		String cri;
 		
+	/** la peau */
 	public abstract void la_peau();
 		String peau;
+	
+	/** Reproduction de l'animal */
+	public abstract void la_reproduction();
+		String bebesCrocodiles;
 		
+	/** Répartition de l'animal */
+	public abstract void leur_localisation();
+		String repartition;
+
 	
 }
