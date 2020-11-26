@@ -45,7 +45,6 @@ public class testDate1 {
 		System.out.print(jour+"/"+mois+"/"+annee + " ");
 		System.out.println(heure+":"+minute+":"+seconde);
 		
-		System.out.print(Calendar.DAY_OF_WEEK);
 		
 		
 

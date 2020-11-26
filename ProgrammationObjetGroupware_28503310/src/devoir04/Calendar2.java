@@ -1,4 +1,4 @@
-package atelier07;
+package devoir04;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -9,7 +9,7 @@ import java.util.TimeZone;
 public class Calendar2 extends GregorianCalendar {
 	
 	protected boolean cours;
-
+	
 	private int heure1;
 	private int minute1;
 	private int seconde1;
