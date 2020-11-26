@@ -1,25 +1,35 @@
 package atelier09;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import util.Keyboard;
 
 public class MonPremierFichierTexte {
-    public static void main(String args[])
-    {
-  
-        try {
-  
-            // Recevoir le fichier 
-            File f = new File("C:\\Users\\anita\\git\\28503310\\ProgrammationObjetGroupware_28503310\\src\\atelier09\\Nom.txt");
-  
-            // Cr�er un nouveau fichier
-            // V�rifier s'il n'existe pas
-            if (f.createNewFile())
-                System.out.println("File created");
-            else
-                System.out.println("File already exists");
-        }
-        catch (Exception e) {
-            System.err.println(e);
-        }
-    }
+	/*
+	Exercice 1 : Créer la classe exécutable MonPremierFichierTexte 
+	qui écrit dans le fichier texte « Nom.txt » les noms des membres du groupe. 
+	*/
+
+	public static void main (String[] args) {
+		String ligne;
+		String nfich = "src/atelier09/Nom.txt";
+		try {
+			File f = new File(nfich);
+			
+			PrintWriter pr = new PrintWriter(f);
+			pr.println("Morgann");
+			pr.println("Julien");
+			pr.println("Mustapha");
+			pr.println("Chenwangli");
+			pr.println("Ana");
+			pr.println("Joyce");
+			
+			pr.close();
+			System.out.println("Fin d'écriture fichier");
+		
+	}
+		catch (IOException e) {e.printStackTrace(); }
+}
 }
