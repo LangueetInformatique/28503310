@@ -24,7 +24,7 @@ public class CarreMulticolore extends CarreRouge implements Coloriable {
 		 */    
 		public void changerCouleur(String co) {
 			int i;
-			for (i = 0;i < couleurs.length;i++)             // est-ce une couleur autoris�e ?
+			for (i = 0;i < couleurs.length;i++) // est-ce une couleur autoris�e ?
 				if (co.equals(couleurs[i])== true) break; 
 			if (i < couleurs.length) couleur = co;
 		}

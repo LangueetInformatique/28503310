@@ -10,10 +10,6 @@ public class Calendar2 extends GregorianCalendar {
 	
 	protected boolean cours;
 	
-	private int heure1;
-	private int minute1;
-	private int seconde1;
-	
 	public void creation(Calendar2 test) {
 
 		String[] actuel = TimeZone.getAvailableIDs(1 * 60 * 60 * 1000);
@@ -32,21 +28,24 @@ public class Calendar2 extends GregorianCalendar {
 		int heure1 = calendar.get(Calendar.HOUR);
 		int minute1 = calendar.get(Calendar.MINUTE);
 		int seconde1 = calendar.get(Calendar.SECOND);
+		int milisec1 = calendar.get(Calendar.MILLISECOND);
 		
 		System.out.print("Heure de creation : "+jour1+"/"+mois1+"/"+annee1 + " ");
-		System.out.println(heure1+":"+minute1+":"+seconde1);
-		
-		if(this.get(Calendar.HOUR_OF_DAY)<12&&(this.get(Calendar.HOUR_OF_DAY)>9
-				&& this.get(Calendar.MINUTE)>30)&&get(Calendar.DAY_OF_WEEK)==5) 
-		     { cours=true;}
-	    else { cours=false;}
+		System.out.println(heure1+":"+minute1+":"+seconde1+milisec1);
 
 	}
 	
 	 public boolean getCours() {
+		 
+			if(this.get(Calendar.HOUR_OF_DAY)<12&&(this.get(Calendar.HOUR_OF_DAY)>9
+					&& this.get(Calendar.MINUTE)>30)&&get(Calendar.DAY_OF_WEEK)==5) 
+			     { cours=true;}
+		    else { cours=false;}
 			return cours;
+		
 	 }
-	public void afficher(Calendar2 test) {
+	 
+	 public void afficher(Calendar2 test) {
 		
 			String[] actuel = TimeZone.getAvailableIDs(1 * 60 * 60 * 1000);
 	
@@ -64,27 +63,20 @@ public class Calendar2 extends GregorianCalendar {
 			int heure = calendar.get(Calendar.HOUR);
 			int minute = calendar.get(Calendar.MINUTE);
 			int seconde = calendar.get(Calendar.SECOND);
+			int milisec = calendar.get(Calendar.MILLISECOND);
 			
-			System.out.print(jour+"/"+mois+"/"+annee + " ");
-			System.out.println(heure+":"+minute+":"+seconde);	
+			System.out.print("Heure de actuel :" +jour+"/"+mois+"/"+annee + " ");
+			System.out.println(heure+":"+minute+":"+seconde+milisec);	
 		
 	}
-	
-	public void duree(Calendar2 test) {
-		
-		Calendar duration = Calendar.getInstance();
-		
-		//duration.add(Calendar.DAY_OF_WEEK, -jour1);
-		//int mois = duration.get(Calendar.MONTH) + 1;
-		//int annee =  duration.get(Calendar.YEAR);
-		duration.get(Calendar.HOUR-heure1);
-		duration.get(Calendar.MINUTE-minute1);
-		duration.get(Calendar.SECOND-seconde1);
-		System.out.print(duration.getTime()); //+"/"+mois+"/"+annee + " ");
-		//System.out.println(heure+":"+minute+":"+seconde);	
-		
-
-		
+				
+	 public void duree(Calendar2 test) throws InterruptedException{
+		 
+		 long duree = System.currentTimeMillis();
+	     Thread.sleep(2000);
+	     long fin = System.currentTimeMillis();
+	     double tiempo = (double) ((fin - duree)/1000);
+	     System.out.println("Différence entre l'heure actuelle et l'heure de création : "+tiempo +" millisecondes"
+	     		+ "");       
 	}
-
 }
