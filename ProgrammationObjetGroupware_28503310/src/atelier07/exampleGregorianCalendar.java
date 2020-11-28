@@ -23,7 +23,7 @@ public class exampleGregorianCalendar {
 		 // print out a bunch of interesting things
 		 System.out.println("ERA: " + calendar.get(Calendar.ERA));
 		 System.out.println("YEAR: " + calendar.get(Calendar.YEAR));
-		 System.out.println("MONTH: " +(calendar.get(Calendar.MONTH)+(1)));
+		 System.out.println("MONTH: " +(calendar.get(Calendar.MONTH)+(1)));//Mes arreglado
 		 System.out.println("WEEK_OF_YEAR: " + calendar.get(Calendar.WEEK_OF_YEAR));
 		 System.out.println("WEEK_OF_MONTH: " + calendar.get(Calendar.WEEK_OF_MONTH));
 		 System.out.println("DATE: " + calendar.get(Calendar.DATE));
@@ -48,7 +48,7 @@ public class exampleGregorianCalendar {
 		 calendar.set(Calendar.HOUR, 3);
 		 System.out.println("ERA: " + calendar.get(Calendar.ERA));
 		 System.out.println("YEAR: " + calendar.get(Calendar.YEAR));
-		 System.out.println("MONTH: " +(calendar.get(Calendar.MONTH)+(1)));
+		 System.out.println("MONTH: " +(calendar.get(Calendar.MONTH)+(1)));//Mes arreglado
 		 System.out.println("WEEK_OF_YEAR: " + calendar.get(Calendar.WEEK_OF_YEAR));
 		 System.out.println("WEEK_OF_MONTH: " + calendar.get(Calendar.WEEK_OF_MONTH));
 		 System.out.println("DATE: " + calendar.get(Calendar.DATE));
