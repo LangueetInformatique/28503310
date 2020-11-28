@@ -25,7 +25,7 @@ public class date {
 		 // print out a bunch of interesting things
 		  
 		 System.out.println("DATE: " + calendar.get(Calendar.DATE));
-		 System.out.println("MONTH: " + calendar.get(Calendar.MONTH));
+		 System.out.println("MONTH: " +(calendar.get(Calendar.MONTH)+(1)));
 		 System.out.println("YEAR: " + calendar.get(Calendar.YEAR));
 		
 		 System.out.println("HOUR: " + calendar.get(Calendar.HOUR));
