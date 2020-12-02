@@ -1,5 +1,6 @@
 package devoir02;
 
+
 public class Etudiant {
 	String nom;
 	String prenom;
@@ -11,7 +12,13 @@ public class Etudiant {
 	int noteMaster;
 	
 	/**
-	 * Constructeur vide. No hay parametros
+	 * Caractéristiques principales d’un étudiant.
+	 * @param setnom
+	 * @param setprenom
+	 * @param setdateNaissance
+	 * @param setnumero
+	 * @param setnoteLicence
+	 * @param setnoteMaster
 	 */
 
 	public void info_nom(String setnom, String setprenom, String setdateNaissance, int setnumero, int setnoteLicence, int setnoteMaster) {
@@ -32,11 +39,19 @@ public class Etudiant {
 	
 	}
 	
+	/**
+	 * Return la moyenne d'un(e) etudiant(e)
+	 * @return
+	 */
 	public String moyenne() {
 		
 		return "Sa moyenne est : " +((noteLicence+noteMaster)/2);
 	}
 	
+	/**
+	 * il renvoie les coodonees des etudiants(es)
+	 * @return
+	 */
 	public String coordonees () {
 		return "Nom : " +nom+ " prenom : " +prenom+ 
 				"\nDate de naissance : " +dateNaissance+ 
@@ -44,19 +59,5 @@ public class Etudiant {
 				", sa moyenne : "+noteLicence+
 				"\net dans le master : "+master+ " avec la moyenne : "+noteMaster;
 	}
-	
-	/**public Etudiant(String nom, String prenom, String dateNaissance, int numero, String licence, String master, int noteLicence, int noteMaster) {
-		
-		this.nom = nom;
-		this.prenom = prenom;
-		this.dateNaissance = dateNaissance;
-		this.numeroEtudiant = numero;
-		this.licence = licence;
-		this.master = master;
-		this.noteLicence = noteLicence;
-		this.noteMaster = noteMaster;
-	}*/
-	
-	
 
 }

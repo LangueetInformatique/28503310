@@ -6,9 +6,27 @@ import java.util.GregorianCalendar;
 import java.util.SimpleTimeZone;
 import java.util.TimeZone;
 
+/**
+ *  * Créer la classe Calendar2 dérivée de Calendar implémentant
+ * un nouvel attribut cours et trois nouvelles méthodes creation()
+ * afficher() et duree(). L'attribut cours est de type boolean
+ * et contient vrai si l’objet est créé pendant le cours
+ * (jeudi 9h30-12h). La méthode creation() affichera la date et
+ * l’heure de la création de l’objet., la méthode afficher()
+ * la date et l’heure courante, la méthode duree() le nombre de
+ * secondes depuis la création de l’objet.
+ * @author anita
+ *
+ */
+
 public class Calendar2 extends GregorianCalendar {
 	
 	protected boolean cours;
+	
+	/**
+	 * 
+	 * @param test
+	 */
 	
 	public void creation(Calendar2 test) {
 
@@ -35,6 +53,12 @@ public class Calendar2 extends GregorianCalendar {
 
 	}
 	
+	/**
+	 * Il renvoie true si l’objet est créé pendant le cours ou
+	 * false dans le cas contraire
+	 * @return
+	 */
+	
 	 public boolean getCours() {
 		 
 			if(this.get(Calendar.HOUR_OF_DAY)<12&&(this.get(Calendar.HOUR_OF_DAY)>9
@@ -44,6 +68,11 @@ public class Calendar2 extends GregorianCalendar {
 			return cours;
 		
 	 }
+	 
+	 /**
+	  * La date et l’heure courante
+	  * @param test
+	  */
 	 
 	 public void afficher(Calendar2 test) {
 		
@@ -69,6 +98,12 @@ public class Calendar2 extends GregorianCalendar {
 			System.out.println(heure+":"+minute+":"+seconde+milisec);	
 		
 	}
+	 
+	 /**
+	  * Le nombre de secondes depuis la création de l’objet
+	  * @param test
+	  * @throws InterruptedException
+	  */
 				
 	 public void duree(Calendar2 test) throws InterruptedException{
 		 

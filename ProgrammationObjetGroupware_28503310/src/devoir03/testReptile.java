@@ -1,8 +1,11 @@
 package devoir03;
 
+/**
+ * 
+ * @author anita
+ *
+ */
 public class testReptile {
-	
-	//Test crocodile
 
 	public static void main(String[] args) {
 		Reptile f = new Reptile("Crocodile", 4);

@@ -1,5 +1,11 @@
 package devoir04;
 
+/**
+ * Ecrire un .programme de test de la classe Calendar2
+ * @author anita
+ *
+ */
+
 public class testCalendar2 {
 
 	public static void main(String[] args) throws InterruptedException {

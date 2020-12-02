@@ -18,6 +18,15 @@ public class moyenne {
 		mediane(p5, p1, p2, p3, p4);
 				
 	}
+	
+	/**
+	 * Parametre avec lesquels on va calculer la medianne
+	 * @param p1
+	 * @param p2
+	 * @param p3
+	 * @param p4
+	 * @param p5
+	 */
 
 	public static void mediane(int p1, int p2, int p3, int p4, int p5) {
 		
@@ -35,13 +44,7 @@ public class moyenne {
         }
         
         // On peut imprimer la serie ordonée
-        /**System.out.println("El arreglo es: ");
-        for (int x = 0; x < arreglo.length; x++) {
-        	
-            System.out.printf("%d ", arreglo[x]);
-        
-        }**/
-        
+
         System.out.printf("\nLa mediane est : %d", p6);
         
 	}
