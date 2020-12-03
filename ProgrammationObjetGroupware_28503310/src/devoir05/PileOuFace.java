@@ -1,6 +1,8 @@
 package devoir05;
 
-//Mensaje de prueba
+/**
+ * Test de documentation
+ */
 
 import java.util.Scanner;
 
@@ -46,7 +48,7 @@ public class PileOuFace {
 		else {
 			System.out.println("Partie perdue ");
 		}
-		//ou je dois ecrire pile.close();
+		
 	}
-
+	
 }
