@@ -10,6 +10,7 @@ public class test_Lire {
 		LireToutUnTexte lt = new LireToutUnTexte(new File("livres/adelaide.txt"));
 		lt.afficher();
 		
+		
 	}
 
 }
