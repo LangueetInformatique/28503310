@@ -9,7 +9,7 @@ Etudiant::Etudiant(int n) {
 	m_NombreNote = n;
 	m_Tnote = new int[m_NombreNote];
 }
-// destructeurh
+// destructeur
 Etudiant::~Etudiant() {
 	delete m_Tnote;
 }
