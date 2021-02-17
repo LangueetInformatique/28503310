@@ -24,6 +24,7 @@ Identite ();
 string nom() const; // accesseurs
 string prenom() const;
 
+int compareTo (const Identite & y) const;
 bool operator == (const Identite & y) const; // redefinition de ==
 Identite operator + (const Identite & y) const; // redefinition de +
 
