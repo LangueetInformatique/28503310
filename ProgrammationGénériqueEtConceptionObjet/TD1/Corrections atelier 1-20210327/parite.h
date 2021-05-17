@@ -1,0 +1,5 @@
+bool parite(short n);
+
+
+
+
