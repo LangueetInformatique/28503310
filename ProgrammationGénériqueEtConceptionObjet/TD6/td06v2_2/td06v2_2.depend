@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1620298454 source:/home/ana/Documents/MOOC/marzo/TD6/td06v2_2/main.cpp
+	<map>
+	<string>
+	<fstream>
+	<iostream>
+

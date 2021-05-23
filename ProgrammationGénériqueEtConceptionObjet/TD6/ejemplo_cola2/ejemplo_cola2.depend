@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1620294884 source:/home/ana/Documents/MOOC/marzo/ejemplo_cola2/main.cpp
+	<queue>
+	<iostream>
+
+1620295661 source:/home/ana/Documents/MOOC/marzo/TD6/ejemplo_cola2/main.cpp
+	<queue>
+	<iostream>
+
