@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1619381634 source:/home/ana/Documents/MOOC/marzo/TD5v1/main.cpp
+	<iostream>
+	<algorithm>
+	<vector>
+
